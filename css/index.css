@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+#headerDiv {
+  background-color: #000000;
+  height: 300px;
+  width: 80%;
+  background-image: url("https://frac.org/wp-content/uploads/library-shelves-banner-photo.jpg");
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+}
+
+.header {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Anton;
+  font-size: 100px;
+  margin: 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  float: left;
+  position: relative;
+  top: 20%;
+  left: 30%;
+
+}
+.header__2{
+  background-color: white;
+  color: #241c69;
+  width: 450px;
+  height: 150px;
+  font-size: 100px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  font-family: Anton;
+  padding: 0;
+  margin: 0;
+  float: left;
+  font-weight: bold;
+  position: relative;
+  top: 20%;
+  left: 30%;
+  border-radius: 20px;
+}
+
+/* 
+=====
+EFFECT FADING OUT FOR SIBLINGS MENU OPTIONS 
+=====
+*/
+
+.menu:hover .menu__link:not(:hover){
+  color: #241c69;
+}
+
+.menu__list{
+  display: flex;  
+  text-align: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;  
+}
+
+.menu__group{
+  flex-grow: 1;
+}
+
+.menu__link{
+  display: block;
+}
+
+/* skin */
+
+.menu{
+  background-color: #6c5ce7;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__link{
+  padding: 2rem 1.5rem;
+
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* states */
+.menu__link:focus{
+  outline: 2px solid #fff;
+}
+
+/* hover animation */
+.menu__link{
+  position: relative;
+  overflow: hidden;
+
+  will-change: color;
+  transition: color .25s ease-out;  
+}
+
+.menu__link::before, 
+.menu__link::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.menu__link::before{
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.menu__link::after{
+  right: 50%;
+  transform: translateX(50%); 
+}
+
+.menu__link:hover::before, 
+.menu__link:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+@media (min-width: 768px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 767px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;  
+  flex-direction: column;
+}
+
+.menuBox{
+  box-sizing: border-box;
+  max-width: 640px;
+  width: 100%;  
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  order: 1;
+  margin: auto;
+  padding-top: 5px;
+}
+#bookSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+ }
+a {
+  text-decoration: none;
+
+}
+#bookBox {
+  
+  width: 200px;
+  height: 310px;
+  background-color: #f5f6f7;
+  margin-top: 10px;
+}
+#bookBox:hover {
+  opacity: 0.8;
+}
+.purchaseBook {
+  float: left;
+  padding-right: 10px;
+}
+p {
+  padding: 0;
+  margin: 1px;
+}
+.bName {
+  color: #4CAF50;
+  border-bottom: 1px solid #4CAF50;
+  font-weight: bold;
+}
+.bookImg {
+  padding-top: 5px;
+  width: 160px;
+  height: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bPrice {
+  color: rgb(83, 121, 84);
+}
+.
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+} 
